@@ -1,2 +1,7 @@
 # clases-LET0010
-material clases
+
+**STAGE** elegir el archivo
+
+**COMMIT** hace el cambio (se puede ver en git-\>commit)
+
+**PUSH** enviar cambios
