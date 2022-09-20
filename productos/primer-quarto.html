@@ -124,7 +124,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p>Podemos escribir texto directamente en el editor y lo podemos formatear: negrita, cursiva y como código</p>
+<p>Podemos escribir texto directamente en el editor y lo podemos formatear: <strong>negrita</strong>, <em>cursiva</em> y como <code>código</code>.</p>
 <p>LaTeX</p>
 <p>Y puedo agregr bloques de código:</p>
 <div class="cell">
@@ -153,8 +153,9 @@ Attaching package: 'dplyr'</code></pre>
 <p>Estos son los datos sobre Chile para las variables poblacion, pib,y esperanza de vida entre los años 2000 y 2019.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(desarrollo, <span class="fu">aes</span>(<span class="at">x=</span> anio, <span class="at">y=</span>pib)) <span class="sc">+</span> </span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">15000</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">size=</span><span class="dv">2</span>, <span class="at">color=</span> <span class="st">'#1fb791'</span>) <span class="sc">+</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">15000</span>))<span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="primer-quarto_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
