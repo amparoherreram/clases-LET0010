@@ -148,9 +148,9 @@ Attaching package: 'dplyr'</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>desarrollo<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">'https://raw.githubusercontent.com/rivaquiroga/datos-de-ejemplo/main/cl_2000-2019.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>desarrollo<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">'https://raw.githubusercontent.com/rivaquiroga/datos-de-ejemplo/main/cl_1960-2020.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Estos son los datos sobre Chile para las variables poblacion, pib,y esperanza de vida entre los años 2000 y 2019.</p>
+<p>Estos son los datos sobre Chile para las variables poblacion, pib,y esperanza de vida entre los años 1960 y 2020.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(desarrollo, <span class="fu">aes</span>(<span class="at">x=</span> anio, <span class="at">y=</span>pib)) <span class="sc">+</span> </span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">size=</span><span class="dv">2</span>, <span class="at">color=</span> <span class="st">'#1fb791'</span>) <span class="sc">+</span></span>
