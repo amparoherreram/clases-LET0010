@@ -33,7 +33,8 @@ La siguiente tabla muestra los datos sobre esperanza de vida según continente p
 desarrollo %>% 
   filter(anio==2020) %>% 
   group_by(continente) %>% 
-  summarise(media= mean(esperanza_vida, na.rm=TRUE),min=min(esperanza_vida,na.rm=TRUE), max=max(esperanza_vida,na.rm=TRUE))
+  summarise(media= mean(esperanza_vida, na.rm=TRUE),min=min(esperanza_vida,na.rm=TRUE), max=max(esperanza_vida,na.rm=TRUE)) %>% 
+  knitr::kable()
 ```
 
 ## Datos sobre `r params$pais`
